@@ -245,6 +245,19 @@ The magic provided by Symbl can be utilized in the following ways:-
         analyticsMetric={analyticsMetric}
     />
     ```
+  
+  <br>
+
+  > ### Modification of the components and styling changes
+  > Each and every component has two primary files in it, `.js` file for making logical changes to component and `.css` file for styling changes of the component.
+  > ```text
+  > Tracker
+  >   │   Tracker.js
+  >   │   styles.css
+  > ```
+  > 
+  > These files can be changed for any CSS styling or logical changes to components according to your needs.
+ 
 
 ## Screenshots
 
