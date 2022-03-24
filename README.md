@@ -139,7 +139,7 @@ The magic provided by Symbl can be utilized in the following ways:-
     The configuration details are as follows:-
   - **Meeting Id**: Unique Identifier of the meeting.
   - **Meeting Name**: Name of the meeting.
-  - **Participant Id**: Unique Identifies of the local participant `(example- 9334785642294, abcd@test.com, ...)`
+  - **Participant Id**: Unique Identifies of the local participant `(e.g- 9334785, abcd@test.com, ...)`
   - **Participant Name**: Name of the local participant who wants to join the meeting.
   - **Audio Stream**: A `MediaStream` object which refers to the audio stream of the local participant.
 
@@ -157,22 +157,25 @@ The magic provided by Symbl can be utilized in the following ways:-
     <br>
     
     #### Usage of Hook
-  - To get real-time closed captions.
+  - To get the real-time closed captions.
   
     ```javascript
     const { closedCaption } = useSymbl(symblConfig);
     ```
-  - To get real-time transcripts.
+    
+  - To get the real-time transcripts.
 
     ```javascript
     const { transcripts } = useSymbl(symblConfig);
     ```
-  - To get real-time messages with sentiment score.
+    
+  - To get the real-time messages with sentiment score.
 
     ```javascript
     const { messagesWithSentiment } = useSymbl(symblConfig);
     ```
-  In order to get all the things at once we can simply destructure the required fields from `useSymbl` Hook. 
+    
+  In order to get all the features we can simply destructure the required fields from `useSymbl` Hook. 
 
     ```javascript
     const {
@@ -195,7 +198,53 @@ The magic provided by Symbl can be utilized in the following ways:-
     Using the `useSymbl` hook, we can easily integrate Symbl capabilities in our app within minutes.
     \
     But in order to display the magical results that we get from Symbl (closed captions, sentiment analysis, ...), we need to create some user interfaces.
+    \
+    \
+    There comes the `<Symbl />` component to rescue.
 
+    <br>
+    
+    #### Usage of Components
+
+  - To display the real-time closed captions.
+    
+    ```javascript
+    <Symbl closedCaption={closedCaption} />
+    ```
+    
+  - To display the real-time message transcripts.
+
+    ```javascript
+    <Symbl 
+        closedCaption={closedCaption} 
+        transcripts={transcripts} 
+    />
+    ```
+    
+  - To display the real-time messages with sentiment score.
+
+    ```javascript
+    <Symbl 
+        closedCaption={closedCaption}
+        messagesWithSentiment={messagesWithSentiment} 
+    />
+    ```
+  
+    > **Note**: Closed Captions are mandatory by default, so they are required to be passed to `<Symbl />` component.
+    
+  In order to display all the features we can simply pass the required details to `<Symbl />` component which we get from `useSymbl` Hook.
+
+    ```javascript
+    <Symbl
+        closedCaption={closedCaption}
+        transcripts={transcripts}
+        insights={insights}
+        topics={topics}
+        trackers={trackers}
+        messagesWithSentiment={messagesWithSentiment}
+        analyticsMetric={analyticsMetric}
+    />
+    ```
 
 ## Screenshots
 
