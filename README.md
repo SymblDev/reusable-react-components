@@ -131,7 +131,7 @@ The application will be started at [http://localhost:3000](http://localhost:3000
 The magic provided by Symbl can be utilized in the following ways:-
 
 - ### Hooks
-    Symbl capabilities can be utilized using the `useSymbl` Hook. It provides all the [features](#features) out of the box.
+    Symbl capabilities can be utilized using the `useSymbl` hook. It provides all the [features](#features) out of the box.
     \
     But in order to get real-time conversation insights a user has to provide some configuration details while initializing the connection with Symbl.
     \
@@ -175,7 +175,7 @@ The magic provided by Symbl can be utilized in the following ways:-
     const { messagesWithSentiment } = useSymbl(symblConfig);
     ```
     
-  In order to get all the features we can simply destructure the required fields from `useSymbl` Hook. 
+  In order to get all the features we can simply destructure the required fields from `useSymbl` hook. 
 
     ```javascript
     const {
@@ -232,7 +232,7 @@ The magic provided by Symbl can be utilized in the following ways:-
   
     > **Note**: Closed Captions are mandatory by default, so they are required to be passed to `<Symbl />` component.
     
-  In order to display all the features we can simply pass the required details to `<Symbl />` component which we get from `useSymbl` Hook.
+  In order to display all the features we can simply pass the required details to `<Symbl />` component which we get from `useSymbl` hook.
 
     ```javascript
     <Symbl
