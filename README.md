@@ -288,10 +288,8 @@ This guide is actively developed, and we love to hear from you! Please feel free
 [symbl_streaming_api_docs]: https://docs.symbl.ai/docs/streamingapi/overview/introduction
 [developer_community]: https://community.symbl.ai/?_ga=2.134156042.526040298.1609788827-1505817196.1609788827
 [slack]: https://join.slack.com/t/symbldotai/shared_invite/zt-4sic2s11-D3x496pll8UHSJ89cm78CA
-[issues]: https://github.com/SymblDev/symbl-livekit-rtc-app/issues
-[pulls]: https://github.com/SymblDev/symbl-livekit-rtc-app/pulls
+[issues]: https://github.com/SymblDev/reusable-react-components/issues
+[pulls]: https://github.com/SymblDev/reusable-react-components/pulls
 [node_js_download_link]: https://nodejs.org/en/download/
 [symbl_signup]: https://platform.symbl.ai/#/signup?utm_source=get-info&utm_medium=marcelo&utm_campaign=rep
-[livekit_example_react_app]: https://github.com/livekit/livekit-react/tree/master/example
-[livekit_react_sdk]: https://github.com/livekit/livekit-react
 [create_react_app_link]: https://github.com/facebook/create-react-app
