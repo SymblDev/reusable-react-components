@@ -75,7 +75,7 @@ This extension provides the following out-of-the-box conversational intelligence
     target-react-project
       │   public
       │   src
-           │   symbl
+           │   symbl    <---
            │   App.js
            │   index.tsx
            │   index.css
@@ -154,7 +154,8 @@ The magic provided by Symbl can be utilized in the following ways:-
     }
     ```
     
-    \
+    <br>
+    
     #### Usage of Hook
   - To get real-time closed captions.
   
